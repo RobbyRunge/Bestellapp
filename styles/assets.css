@@ -1,0 +1,50 @@
+h1 {
+  font-size: 40px;
+}
+
+.image-headline {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.arrow-icon {
+  width: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+a:hover {
+  color: orange;
+  transition: 0.3s;
+  background-color: black;
+  padding: 4px;
+  border-radius: 24px;
+}
+
+p img {
+  width: 16px;
+}
+
+.plus-position {
+  position: relative;
+}
+
+.plus-style {
+  border: 1px solid lightgrey;
+  padding: 8px;
+  position: absolute;
+  right: -17px;
+  bottom: 114px;
+  width: 24px;
+}
+
+.plus-style:hover {
+  background-color: lightgrey;
+  transition: 0.3s;
+}
