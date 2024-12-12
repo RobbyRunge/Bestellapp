@@ -35,8 +35,16 @@ body {
   background: grey;
 }
 
-p {
-  line-height: 1.6;
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+h3 {
+  font-size: 24px;
 }
 
 .pd-top-bottom-8 {
@@ -48,6 +56,7 @@ p {
   padding: 16px;
 }
 
-.pd-left-32 {
-  padding-left: 32px;
+.border-shadow {
+  border-radius: 16px;
+  box-shadow: 0 0 10px 0 rgb(0 0 0 / 20%);
 }

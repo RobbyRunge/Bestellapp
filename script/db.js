@@ -1,5 +1,6 @@
 let myDishes = [
   {
+    "headImage": "./assets/img/burger.jpg",
     "headline": "Burger",
     "name": "Big Hamburger",
     "price": 6.50,
@@ -25,21 +26,23 @@ let myDishes = [
   },
   
   {
+    "headImage": "./assets/img/nudeln.png",
+    "headline": "Nudeln",
     "name": "Nudeln mit Tomatensauce",
     "price": 8.50,
-    "description": "Ein großer, saftiger Burger, der aus einem dicken Rindfleischpatty, frischem Salat, Tomaten, Gurken, Käse und Zwiebeln besteht, eingerahmt von einem weichen Brötchen. Mit Saucen Ketchup, Mayo und einer speziellen Burger-Soße verfeinert."
+    "description": "Nudeln mit Tomatensauce: Ein klassisches Gericht aus al dente gekochten Nudeln und einer würzigen, leicht süßlichen Tomatensauce. Perfekt abgerundet mit frischen Kräutern und Parmesan."
   },
 
   {
     "name": "Nudeln mit Hackfleischsauce",
     "price": 9.00,
-    "description": "Ein großer, saftiger Burger, der aus einem dicken Rindfleischpatty, frischem Salat, Tomaten, Gurken, Käse und Zwiebeln besteht, eingerahmt von einem weichen Brötchen. Mit Saucen Ketchup, Mayo und einer speziellen Burger-Soße verfeinert."
+    "description": "Saftige Hackfleischsauce, gewürzt mit Tomaten, Kräutern und Zwiebeln, serviert über al dente gekochten Nudeln – ein klassisches, herzhaftes Gericht."
   },
 
   {
     "name": "Spaghetti Carbonara",
     "price": 11.00,
-    "description": "Ein großer, saftiger Burger, der aus einem dicken Rindfleischpatty, frischem Salat, Tomaten, Gurken, Käse und Zwiebeln besteht, eingerahmt von einem weichen Brötchen. Mit Saucen Ketchup, Mayo und einer speziellen Burger-Soße verfeinert."
+    "description": "Ein klassisches italienisches Gericht aus Spaghetti, Eigelb, Parmesan, Pancetta und Pfeffer. Die cremige Sauce entsteht allein durch die Kombination der Zutaten, ohne Sahne und unglaublich lecker!"
   },
 
   {
@@ -49,6 +52,8 @@ let myDishes = [
   },
 
   {
+    "headImage": "./assets/img/aufläufe.jpg",
+    "headline": "Aufläufe",
     "name": "Broccoli-Auflauf",
     "price": 11.00,
     "description": "Nudeln mit würziger Sahnesauce und Brokkolie, mit Käse überbacken."
@@ -57,13 +62,13 @@ let myDishes = [
   {
     "name": "Nudel-Auflauf",
     "price": 11.00,
-    "description": "Ein großer, saftiger Burger, der aus einem dicken Rindfleischpatty, frischem Salat, Tomaten, Gurken, Käse und Zwiebeln besteht, eingerahmt von einem weichen Brötchen. Mit Saucen Ketchup, Mayo und einer speziellen Burger-Soße verfeinert."
+    "description": "Ein cremiger Auflauf aus Nudeln, Gemüse und Käse, im Ofen goldbraun überbacken – einfach und köstlich!"
   },
 
   {
     "name": "Gemüse-Auflauf",
     "price": 11.00,
-    "description": "Ein großer, saftiger Burger, der aus einem dicken Rindfleischpatty, frischem Salat, Tomaten, Gurken, Käse und Zwiebeln besteht, eingerahmt von einem weichen Brötchen. Mit Saucen Ketchup, Mayo und einer speziellen Burger-Soße verfeinert."
+    "description": "Ein Gemüse-Auflauf ist ein herzhaftes Gericht, bei dem frisches oder tiefgekühltes Gemüse mit einer cremigen Sauce und Käse überbacken wird. Perfekt als gesunde Hauptspeise oder Beilage!"
   },
 
   {
@@ -73,6 +78,8 @@ let myDishes = [
   },
 
   {
+    "headImage": "./assets/img/dessert.jpg",
+    "headline": "Desserts",
     "name": "Tiramisu",
     "price": 9.50,
     "description": "Ist ein klassisches italienisches Dessert aus Löffelbiskuits, Mascarponecreme, Kaffee und Kakaopulver, mit Amaretto verfeinert."
@@ -92,6 +99,6 @@ let myDishes = [
   {
     "name": "Schokobrötchen (5 Stück)",
     "price": 8.50,
-    "description": "gefüllt mit Kinderschokolade, dazu Vanille-Dip"
+    "description": "Gefüllt mit Kinderschokolade, dazu Vanille-Dip"
   },
 ]

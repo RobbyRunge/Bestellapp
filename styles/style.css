@@ -21,6 +21,7 @@ main {
 .rating-position {
   display: flex;
   align-items: center;
+  gap: 4px;
 }
 
 .nav-bar {
@@ -39,11 +40,18 @@ main {
   display: flex;
   flex-direction: column;
   border: 1px solid lightgrey;
+  line-height: 2;
+}
+
+.dishes-container:hover {
+  background-color: rgb(235, 235, 235);
+  transition: 0.25s;
 }
 
 .price-style {
   color: orange;
   font-weight: bold;
+  font-size: 20px;
 }
 
 footer {

@@ -1,11 +1,8 @@
-h1 {
-  font-size: 40px;
-}
-
 .image-headline {
   width: 100%;
   height: 240px;
   object-fit: cover;
+  margin-top: 48px;
 }
 
 .arrow-icon {
@@ -29,22 +26,4 @@ a:hover {
 
 p img {
   width: 16px;
-}
-
-.plus-position {
-  position: relative;
-}
-
-.plus-style {
-  border: 1px solid lightgrey;
-  padding: 8px;
-  position: absolute;
-  right: -17px;
-  bottom: 92px;
-  width: 24px;
-}
-
-.plus-style:hover {
-  background-color: lightgrey;
-  transition: 0.3s;
 }
