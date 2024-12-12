@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="./styles/basket.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <script src="./script/db.js"></script>
+    <script src="./script/script.js"></script>
+    <script src="./script/template.js"></script>
   </head>
-  <body>
+  <body onload="init()">
     <header>
       <img src="./assets/img/Logo.png" alt="" />
       <!-- <img src="./assets/icons/hamburger-menu-svgrepo-com.svg" alt="" /> -->
     </header>
-    <main>
+    <main class="">
       <section class="content">
         <div>
           <img class="image-headline" src="./assets/img/burger.jpg" alt="" />
@@ -29,31 +32,23 @@
 
         <div class="nav-bar">
           <img class="arrow-icon" src="./assets/icons/arrow-icon.png" alt="" />
-          <a href="#">Burger</a>
+          <a href="#burger">Burger</a>
           <a href="#">Nudeln</a>
           <a href="#">Aufläufe</a>
           <a href="#">Dessert</a>
         </div>
 
         <div class="pd-16">
-          <div>
-            <img class="image-headline" src="./assets/img/Chorizo_Burger_Querformat.webp" alt="" />
-          </div>
-          <div class="pd-left-32">
-            <h2 class="pd-16">Burger</h2>
-          </div>
-          <div class="dishes-container pd-16">
-            <h3 id="dishesName">Big Hamburger</h3>
-            <p id="dishesDescription" class="pd-top-bottom-8">
-              Ist ein großer, saftiger Burger, mit einem großzügigen Rindfleischpatty, knackigem Salat, Tomaten, Zwiebeln, Käse, Gurken und einer würzigen Sauce. Wird in einem fluffigen Brötchen serviert. Für alle die es klassisch lieben!
-            </p>
-            <p id="dishesPrice" class="price-style">6,50 €</p>
-            <div class="plus-position">
-              <button onclick="addDishesToBasket()"><img class="plus-style" src="./assets/img/plus.png" alt="" /></button>
-            </div>
-          </div>
+          <img class="image-headline" src="./assets/img/Chorizo_Burger_Querformat.webp" alt="" />
         </div>
+
+        <div class="pd-left-32">
+          <h2 id="burger" class="pd-16">Burger</h2>
+        </div>
+
+        <div id="content" class="pd-16"></div>
       </section>
+
       <section class="basket-container">
         <div class="basket"></div>
       </section>

@@ -1,5 +1,6 @@
 let myDishes = [
   {
+    "headline": "Burger",
     "name": "Big Hamburger",
     "price": 6.50,
     "description": "Ist ein großer, saftiger Burger, mit einem großzügigen Rindfleischpatty, knackigem Salat, Tomaten, Zwiebeln, Käse, Gurken und einer würzigen Sauce. Wird in einem fluffigen Brötchen serviert. Für alle die es klassisch lieben!"
@@ -22,7 +23,7 @@ let myDishes = [
     "price": 7.50,
     "description": "Ist ein großzügiger Burger mit einem saftigen, panierten oder gegrillten Hähnchen-Patty, serviert in einem weichen Brötchen. Enthält Salat, Tomaten, Käse, Gurken, und eine spezielle Sauce, um den Geschmack abzurunden. Ideal für alle, die Hähnchen lieben und einen herzhaften Genuss suchen!"
   },
-
+  
   {
     "name": "Nudeln mit Tomatensauce",
     "price": 8.50,
