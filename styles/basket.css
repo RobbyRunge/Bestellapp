@@ -1,8 +1,8 @@
 .basket-container {
   width: 300px;
   flex-grow: 1;
-  border: 2px solid red;
   padding: 16px;
+  background-color: rgb(233, 233, 233);
 }
 
 .basket {
@@ -10,5 +10,10 @@
   height: 400px;
   position: sticky;
   top: 16px;
-  background-color: lightgrey;
+}
+
+.number-buttons-position {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }

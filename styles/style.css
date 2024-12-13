@@ -48,6 +48,11 @@ main {
   transition: 0.25s;
 }
 
+.headline-add-position {
+  display: flex;
+  justify-content: space-between;
+}
+
 .price-style {
   color: orange;
   font-weight: bold;
