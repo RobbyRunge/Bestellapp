@@ -101,4 +101,6 @@ let myDishes = [
     "price": 8.50,
     "description": "Gefüllt mit Kinderschokolade, dazu Vanille-Dip"
   },
-]
+];
+
+let basket = [];

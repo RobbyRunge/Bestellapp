@@ -24,6 +24,11 @@ main {
   gap: 4px;
 }
 
+.delivery-costs {
+  color: rgb(185, 185, 185);
+  font-size: 12px;
+}
+
 .nav-bar {
   display: flex;
   justify-content: flex-start;

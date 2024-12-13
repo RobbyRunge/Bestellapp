@@ -7,9 +7,26 @@
 
 .basket {
   width: 100%;
-  height: 400px;
+  height: 200px;
   position: sticky;
   top: 16px;
+}
+
+.border-basket {
+  margin-bottom: 16px;
+  background-color: gray;
+  height: 1px;
+}
+
+.basket-headline {
+  text-align: center;
+}
+
+.name-price-amount-position {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 24px;
 }
 
 .number-buttons-position {
