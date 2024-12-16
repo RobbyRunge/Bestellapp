@@ -1,45 +1,45 @@
-function getTemplateDishes(indexDishes) {
+function getTemplateDishes(i) {
   return `
           <div class="dishes-container pd-16 border-shadow">
             <div class="headline-add-position">
-              <h3 id="dishesName">${myDishes[indexDishes].name}</h3>
-              <img onclick="addDishesToBasket(${indexDishes})" src="./assets/img/plus.png" alt="">
+              <h3 id="dishesName">${myDishes[i].name}</h3>
+              <img onclick="addDishesToBasket(${i})" src="./assets/img/plus.png" alt="">
             </div>
             <p id="dishesDescription" class="pd-top-bottom-8">
-              ${myDishes[indexDishes].description}
+              ${myDishes[i].description}
             </p>
-            <p id="dishesPrice" class="price-style">${formatPrice(myDishes[indexDishes].price)}</p>
+            <p id="dishesPrice" class="price-style">${formatPrice(myDishes[i].price)}</p>
           </div>
           <br>`
 }
 
-function getTemplateHeadline(indexDishes) {
+function getTemplateHeadline(i) {
   return `
     <div>
-      <h2  class="pd-16">${myDishes[indexDishes].headline}</h2>
+      <h2 class="pd-16">${myDishes[i].headline}</h2>
     </div>`
 }
 
-function getTemplateHeadlineImg(indexDishes) {
+function getTemplateHeadlineImg(i) {
   return `
     <div>
-      <img id="headline-${myDishes[indexDishes].headImage}" class="image-content border-shadow" src="${myDishes[indexDishes].headImage}" alt="" />
+      <img id="headline-${myDishes[i].headImage}" class="image-content border-shadow" src="${myDishes[i].headImage}" alt="" />
     </div>`
 }
 
-function getTemplateBasket(indexDishes) {
+function getTemplateBasket(i) {
   return `
     <div class="name-price-amount-position">
       <div class="number-buttons-position">
-        <p><strong>${myDishes[indexDishes].name}</strong></p>
-        <img onclick="deleteDishes()" class="plus-minus-trash" src="./assets/img/trash.png" alt="" />
+        <p><strong>${basket[i].name}</strong></p>
+        <img onclick="deleteDishes(${i})" class="trash" src="./assets/img/trash.png" alt="" />
       </div>
-      <p><strong>Preis: ${formatPrice(myDishes[indexDishes].price)}</strong></p>
+      <p><strong>Preis: ${formatPrice(basket[i].price)}</strong></p>
       <div class="number-buttons-position">
-        <p><strong>Anzahl: 1</strong></p>
+        <p><strong>Anzahl:</strong></p>
         <div>
-          <img class="plus-minus-trash" src="./assets/img/plus.png" alt="" />
-          <img class="plus-minus-trash" src="./assets/img/minus.png" alt="" />
+          <img onclick="addDishes(${basket[i]})" class="plus-minus" src="./assets/img/plus.png" alt="" />
+          <img onclick="removeDishes(${basket[i]})" class="plus-minus" src="./assets/img/minus.png" alt="" />
         </div>
       </div>
     </div>

@@ -3,6 +3,9 @@ function init() {
   renderBasket();
 }
 
+let totalPrice = 0;
+let deliveryCosts = 2.00; 
+
 function formatPrice(price) {
   return new Intl.NumberFormat('de-DE', {
     style: 'currency',
@@ -10,31 +13,36 @@ function formatPrice(price) {
   }).format(price);
 }
 
-function renderDishes(indexDishes) {
+function renderDishes() {
   let dishesRef = document.getElementById('content');
   dishesRef.innerHTML = "";
-  for (let indexDishes = 0; indexDishes < myDishes.length; indexDishes++) {
-    if (myDishes[indexDishes].headline) {
-      dishesRef.innerHTML += getTemplateHeadlineImg(indexDishes);
-      dishesRef.innerHTML += getTemplateHeadline(indexDishes);
+  for (let i = 0; i < myDishes.length; i++) {
+    if (myDishes[i].headline) {
+      dishesRef.innerHTML += getTemplateHeadlineImg(i);
+      dishesRef.innerHTML += getTemplateHeadline(i);
     }
-    dishesRef.innerHTML += getTemplateDishes(indexDishes);
+    dishesRef.innerHTML += getTemplateDishes(i);
   }
 }
 
-function renderBasket(indexDishes) {
+function renderBasket() {
   let basketRef = document.getElementById('basket-container-render')
   basketRef.innerHTML = "";
-  for (let indexDishes = 0; indexDishes < basket.length; indexDishes++) {
-    basketRef.innerHTML += getTemplateBasket(indexDishes); 
+  for (let i = 0; i < basket.length; i++) {
+    basketRef.innerHTML += getTemplateBasket(i); 
   }
 }
 
-function addDishesToBasket(indexDishes) {
-  basket.push(myDishes[indexDishes]);
+function addDishesToBasket(i) {
+  if (myDishes[i]) {
+    basket.push(myDishes[i]);
+  } 
+
   renderBasket();
 }
 
-// function deleteDishes (indexBasket) {
-//   basket.splice(myDishes[indexBasket])
-// }
+function deleteDishes(i) {
+  basket.splice(i, 1);
+
+  renderBasket();
+}

@@ -1,3 +1,5 @@
+let basket = [];
+
 let myDishes = [
   {
     "headImage": "./assets/img/burger.jpg",
@@ -103,4 +105,3 @@ let myDishes = [
   },
 ];
 
-let basket = [];

@@ -27,6 +27,7 @@ p img {
 .headline-add-position img:hover {
   background-color: wheat;
   transition: 0.3s;
+  cursor: pointer;
 }
 
 a {
@@ -42,8 +43,23 @@ a:hover {
   background-color: black;
   padding: 4px;
   border-radius: 24px;
+  cursor: pointer;
 }
 
-.plus-minus-trash {
+.plus-minus,
+.trash {
   width: 20px;
+}
+
+.plus-minus:hover {
+  background-color: wheat;
+  transition: 0.3s;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.trash:hover {
+  transition: 0.3s;
+  filter: drop-shadow(0px 0px 4px orange);
+  cursor: pointer;
 }
