@@ -4,11 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bestellapp</title>
+
     <link rel="shortcut icon" href="./assets/icons/favicon-32x32.png" type="image/x-icon" />
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/basket.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
     <link rel="stylesheet" href="./styles/style.css" />
+
     <script src="./script/db.js"></script>
     <script src="./script/script.js"></script>
     <script src="./script/template.js"></script>
@@ -51,6 +53,18 @@
           <div class="price"></div>
         </div>
       </section>
+
+      <div id="overlay" onclick="offCart()">
+        <div class="cart">
+          <div class="text-in-cart">
+            <h1>Vielen Dank</h1>
+            <br />
+            <h2>Ihre Bestellung ist bei uns eingegangen und wird zu Ihrer angegebenen Adresse geschickt.</h2>
+            <br />
+            <h3>Lassen Sie es sich schmecken</h3>
+          </div>
+        </div>
+      </div>
     </main>
     <footer></footer>
   </body>

@@ -46,6 +46,16 @@ a:hover {
   cursor: pointer;
 }
 
+.basket-buy-position img {
+  width: 24px;
+}
+
+.basket-buy-position:hover {
+  background-color: orangered;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
 .plus-minus,
 .trash {
   width: 20px;

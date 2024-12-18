@@ -12,6 +12,10 @@
   top: 16px;
 }
 
+.basket-empty-text {
+  text-align: center;
+}
+
 .border-basket {
   margin-bottom: 16px;
   background-color: gray;
@@ -33,4 +37,27 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.remove-quantity-add-position {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.basket-buy-position {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 8px;
+  width: 60%;
+  background-color: orange;
+  border-radius: 8px;
+}
+
+.basket-buy-container {
+  display: flex;
+  justify-content: center;
 }
