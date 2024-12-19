@@ -32,16 +32,16 @@ function getTemplateBasket(i) {
     <div class="name-price-amount-position">
       <div class="number-buttons-position">
         <p>${basket[i].name}</p>
-        <img onclick="deleteDishes(${i})" class="trash" src="./assets/img/trash.png" alt="" />
+        <img onclick="deleteDishes(${basket[i].id})" class="trash" src="./assets/img/trash.png" alt="" />
       </div>
       <p>Einzelpreis: <strong>${formatPrice(basket[i].price)}</strong></p>
       <p>Total: <strong>${formatPrice(basket[i].price * basket[i].quantity)}</strong></p>
       <div class="number-buttons-position">
         <p>Anzahl:</p>
         <div class="remove-quantity-add-position">
-          <img onclick="removeDishes(${i})" class="plus-minus" src="./assets/img/minus.png" alt="" />
+          <img onclick="removeDishes(${basket[i].id})" class="plus-minus" src="./assets/img/minus.png" alt="" />
           <span><strong>${basket[i].quantity}</strong></span>
-          <img onclick="addDishesToBasket(${i})" class="plus-minus" src="./assets/img/plus.png" alt="" />
+          <img onclick="addDishesToBasket(${basket[i].id})" class="plus-minus" src="./assets/img/plus.png" alt="" />
         </div>
       </div>
     </div>
@@ -56,5 +56,5 @@ function getTotalPriceTemplate(totalPrice, deliveryCosts) {
     </div><br>
     <div class="basket-buy-container">
       <button onclick="openCart()" class="basket-buy-position">Zur Kasse <img src="./assets/img/shopping-cart.png" alt="" /></button>
-    </div>`;
+    </div><br>`;
 }

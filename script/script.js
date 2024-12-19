@@ -58,9 +58,9 @@ function renderBasket() {
   
 }
 
-function addDishesToBasket(i) {
-  let dish = myDishes[i];
-  let existingDish = basket.find(item => item.name === dish.name);
+function addDishesToBasket(id) {
+  let dish = myDishes.find(item => item.id === id);
+  let existingDish = basket.find(item => item.id === id);
 
   if (existingDish) {
     existingDish.quantity++;
@@ -71,18 +71,22 @@ function addDishesToBasket(i) {
   renderBasket();
 }
 
-function removeDishes(i) {
-  if (basket[i].quantity > 1) {
-    basket[i].quantity--; 
-  } else {
-    basket.splice(i, 1);
+function removeDishes(id) {
+  let dishIndex = basket.findIndex(item => item.id === id);
+
+  if (dishIndex !== -1) {
+    if (basket[dishIndex].quantity > 1) {
+      basket[dishIndex].quantity--;
+    } else {
+      basket.splice(dishIndex, 1);
+    }
   }
 
   renderBasket();
 }
 
-function deleteDishes(i) {
-  basket.splice(i, 1);
-
+function deleteDishes(id) {
+  basket = basket.filter(item => item.id !== id);
+  
   renderBasket();
 }
