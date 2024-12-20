@@ -11,6 +11,9 @@
 }
 
 @media (max-width: 780px) {
+  .logo-position img {
+    left: 45%;
+  }
   .content {
     width: 100%;
   }
