@@ -9,8 +9,10 @@
     <link rel="stylesheet" href="./styles/assets.css" />
     <link rel="stylesheet" href="./styles/basket.css" />
     <link rel="stylesheet" href="./styles/standard.css" />
+    <link rel="stylesheet" href="./styles/basket-responsive.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <link rel="stylesheet" href="./styles/responsive.css" />
+    <link rel="stylesheet" href="./styles/buy-cart.css" />
 
     <script src="./script/db.js"></script>
     <script src="./script/script.js"></script>
@@ -58,12 +60,25 @@
       <div id="overlay" onclick="offCart()">
         <div class="cart">
           <div class="text-in-cart">
-            <h1>Vielen Dank</h1>
+            <h1>Vielen Dank!</h1>
             <br />
             <h2>Ihre Bestellung ist bei uns eingegangen und wird zu Ihrer angegebenen Adresse geschickt.</h2>
             <br />
-            <h3>Lassen Sie es sich schmecken</h3>
+            <h3>Lassen Sie es sich schmecken!</h3>
           </div>
+        </div>
+      </div>
+
+      <div id="responsive-basket" onclick="openCartResponsive()" class="responsive-basket">
+        <img src="./assets/img/shopping-cart.png" alt="" />
+      </div>
+
+      <div id="myNav" class="overlay">
+        <div class="basket">
+          <h2 class="basket-headline">Warenkorb</h2>
+          <br />
+          <div id="basket-render-container"></div>
+          <div class="price"></div>
         </div>
       </div>
     </main>

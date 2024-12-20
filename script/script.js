@@ -4,21 +4,35 @@ let deliveryCosts = 2.00;
 function init() {
   renderDishes();
   renderBasket();
+  renderResponsiveBasket();
 }
 
 function openCart() {
-  document.getElementById('overlay').style.display = "block";
+  document.getElementById('overlay').style.display = 'block';
 
   resetCart();
 }
 
 function offCart() {
-  document.getElementById("overlay").style.display = "none";
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('myNav').style.height = '0%';
+}
+
+function openCartResponsive() {
+  let openCartRef = document.getElementById('myNav').style.height = '100%';
+//   // if (openCartRef.style.height = '100%') {
+//   //   document.body.classList.add('no-scroll');
+//   // }
+}
+
+function closeCartResponsive() {
+  document.getElementById("myNav").style.height = "0%";
 }
 
 function resetCart() {
   basket = [];
   renderBasket();
+  renderResponsiveBasket();
 }
 
 function formatPrice(price) {
@@ -53,9 +67,25 @@ function renderBasket() {
   if (basket.length > 0) {
     basketRef.innerHTML += getTotalPriceTemplate(totalPrice, deliveryCosts);;
   } else {
-    basketRef.innerHTML = "<p class='basket-empty-text'>Ihr Warenkorb ist leer.</p>";
+    basketRef.innerHTML += getTemplateEmptyBasket();
   }
-  
+}
+
+function renderResponsiveBasket() {
+  let responsiveBasketRef = document.getElementById('basket-render-container');
+  responsiveBasketRef.innerHTML = "";
+  let totalPrice = 0;
+
+  for (let i = 0; i < basket.length; i++) {
+    responsiveBasketRef.innerHTML += '<a class="closebtn" onclick="closeCartResponsive()">&times;</a>' + getTemplateResponsiveBasket(i);
+    totalPrice += basket[i].price * basket[i].quantity;
+  }
+
+  if (basket.length > 0) {
+    responsiveBasketRef.innerHTML += getTotalResponsivePriceTemplate(totalPrice, deliveryCosts);
+  } else {
+    responsiveBasketRef.innerHTML = '<a class="closebtn" onclick="closeCartResponsive()">&times;</a>' + getTemplateEmptyBasket();
+  }
 }
 
 function addDishesToBasket(id) {
@@ -69,6 +99,7 @@ function addDishesToBasket(id) {
   }
 
   renderBasket();
+  renderResponsiveBasket();
 }
 
 function removeDishes(id) {
@@ -83,10 +114,12 @@ function removeDishes(id) {
   }
 
   renderBasket();
+  renderResponsiveBasket();
 }
 
 function deleteDishes(id) {
   basket = basket.filter(item => item.id !== id);
   
   renderBasket();
+  renderResponsiveBasket();
 }

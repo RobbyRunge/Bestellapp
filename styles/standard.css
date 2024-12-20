@@ -9,6 +9,9 @@
   padding: 0;
 
   scroll-behavior: smooth;
+  ::-webkit-scrollbar {
+    display: none;
+  }
 }
 
 body {
@@ -17,6 +20,12 @@ body {
   grid-template-rows: auto 1fr auto;
 
   background-color: white;
+}
+
+main {
+  ::-webkit-scrollbar {
+    display: block;
+  }
 }
 
 ::-webkit-scrollbar {
@@ -63,4 +72,12 @@ h3 {
 
 .d-none {
   display: none;
+}
+
+.number {
+  color: orange;
+}
+
+.no-scroll {
+  overflow: hidden;
 }
