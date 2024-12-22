@@ -24,38 +24,13 @@ p img {
   border-radius: 24px;
 }
 
-.add-button img:hover {
-  background-color: rgb(255, 221, 159);
-  transition: 0.3s;
-  cursor: pointer;
-}
-
 .basket-buy-position img {
   width: 24px;
-}
-
-.basket-buy-position:hover {
-  background-color: orangered;
-  transition: 0.3s;
-  cursor: pointer;
 }
 
 .plus-minus,
 .trash {
   width: 20px;
-}
-
-.plus-minus:hover {
-  background-color: wheat;
-  transition: 0.3s;
-  border-radius: 10px;
-  cursor: pointer;
-}
-
-.trash:hover {
-  transition: 0.3s;
-  filter: drop-shadow(0px 0px 4px orange);
-  cursor: pointer;
 }
 
 .responsive-basket img {

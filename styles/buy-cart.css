@@ -16,11 +16,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 50vh;
-  width: 50vw;
-  background-color: lightgrey;
+  background-color: wheat;
   border: 2px solid black;
   border-radius: 10px;
-  padding: 24px;
+  padding: 12px;
   z-index: 2;
 }
