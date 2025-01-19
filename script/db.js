@@ -1,5 +1,12 @@
+/**
+ * @type {Array<Object>} Array of items currently in the shopping basket.
+ */
 let basket = [];
 
+/**
+ *  // Dish objects with properties: id, name, price, description, headImage (optional), headline (optional).
+ * @type {Array<Object>} Array of dishes available for selection.
+ */
 let myDishes = [
   {
     "id": 0,

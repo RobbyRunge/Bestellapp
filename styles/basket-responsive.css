@@ -86,6 +86,8 @@
 
 .responsive-trash {
   cursor: pointer;
+  padding: 2px;
+  border-radius: 4px;
   background-color: orange;
   width: 24px;
 }
